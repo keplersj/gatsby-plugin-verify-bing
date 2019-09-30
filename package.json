@@ -1,0 +1,37 @@
+{
+  "name": "gatsby-plugin-verify-bing",
+  "version": "0.0.0-development",
+  "description": "Gatsby plugin for Bing Website Verification",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "prepare": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keplersj/gatsby-plugin-verify-bing.git"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "bing",
+    "seo"
+  ],
+  "author": "Kepler Sticka-Jones <kepler@stickajones.org>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keplersj/gatsby-plugin-verify-bing/issues"
+  },
+  "homepage": "https://github.com/keplersj/gatsby-plugin-verify-bing#readme",
+  "devDependencies": {
+    "@types/node": "^12.7.8",
+    "jest": "^24.9.0",
+    "jest-runner-prettier": "^0.3.1",
+    "prettier": "^1.18.2",
+    "typescript": "^3.6.3"
+  },
+  "dependencies": {
+    "xmlbuilder": "^13.0.2"
+  }
+}
