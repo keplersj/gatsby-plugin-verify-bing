@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/keplersj/gatsby-plugin-verify-bing.git"
+    "url": "https://github.com/keplersj/gatsby-plugin-verify-bing.git"
   },
   "keywords": [
     "gatsby",
@@ -29,6 +29,7 @@
     "jest": "^24.9.0",
     "jest-runner-prettier": "^0.3.1",
     "prettier": "^1.18.2",
+    "semantic-release": "^15.13.24",
     "typescript": "^3.6.3"
   },
   "dependencies": {
