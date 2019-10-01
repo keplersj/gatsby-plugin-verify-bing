@@ -1,9 +1,11 @@
 module.exports = {
+  collectCoverage: true,
   projects: [
     {
       displayName: "test",
       preset: "ts-jest",
-      snapshotSerializers: ["jest-serializer-xml"]
+      snapshotSerializers: ["jest-serializer-xml"],
+      collectCoverage: true
     },
     {
       displayName: "lint:prettier",
@@ -17,7 +19,8 @@ module.exports = {
         "/gatsby-ssr.js",
         "/gatsby-ssr.js.map",
         "/gatsby-ssr.d.ts",
-        "/gatsby-ssr.d.ts.map"
+        "/gatsby-ssr.d.ts.map",
+        "/coverage/"
       ]
     }
   ]
