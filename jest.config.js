@@ -1,6 +1,11 @@
 module.exports = {
   projects: [
     {
+      displayName: "test",
+      preset: "ts-jest",
+      snapshotSerializers: ["jest-serializer-xml"]
+    },
+    {
       displayName: "lint:prettier",
       preset: "jest-runner-prettier",
       testPathIgnorePatterns: [

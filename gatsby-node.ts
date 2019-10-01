@@ -8,7 +8,7 @@ const defaultXmlFileName = "BingSiteAuth.xml";
 
 interface PluginOptions {
   userIds: string[];
-  xmlFileName: string;
+  xmlFileName?: string;
 }
 
 export const onPostBuild = async (_: any, pluginOptions: PluginOptions) => {
