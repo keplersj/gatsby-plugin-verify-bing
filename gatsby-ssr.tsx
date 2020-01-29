@@ -13,11 +13,11 @@ interface PluginOptions {
 export const onRenderBody = (
   { pathname, setHeadComponents }: GatsbyActions,
   pluginOptions: PluginOptions
-) => {
+): void => {
   if (pluginOptions && pluginOptions.userIds && pathname === "/") {
     setHeadComponents(
       pluginOptions.userIds.map(userId => (
-        <meta name="msvalidate.01" content={userId} />
+        <meta key={userId} name="msvalidate.01" content={userId} />
       ))
     );
   }

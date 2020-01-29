@@ -11,7 +11,10 @@ interface PluginOptions {
   xmlFileName?: string;
 }
 
-export const onPostBuild = async (_: any, pluginOptions: PluginOptions) => {
+export const onPostBuild = async (
+  _: any,
+  pluginOptions: PluginOptions
+): Promise<void> => {
   if (pluginOptions && pluginOptions.userIds) {
     const xml = builder
       .create({
