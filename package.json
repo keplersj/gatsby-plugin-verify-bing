@@ -41,7 +41,7 @@
   },
   "dependencies": {
     "react": "^16.10.1",
-    "xmlbuilder": "^14.0.0"
+    "xmlbuilder": "^15.0.0"
   },
   "eslintConfig": {
     "extends": "starstuff/auto",
