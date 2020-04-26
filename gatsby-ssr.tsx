@@ -16,7 +16,7 @@ export const onRenderBody = (
 ): void => {
   if (pluginOptions && pluginOptions.userIds && pathname === "/") {
     setHeadComponents(
-      pluginOptions.userIds.map(userId => (
+      pluginOptions.userIds.map((userId) => (
         <meta key={userId} name="msvalidate.01" content={userId} />
       ))
     );

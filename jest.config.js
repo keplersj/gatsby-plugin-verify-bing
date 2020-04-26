@@ -8,7 +8,7 @@ const testPathIgnorePatterns = [
   "/gatsby-ssr.js.map",
   "/gatsby-ssr.d.ts",
   "/gatsby-ssr.d.ts.map",
-  "/coverage/"
+  "/coverage/",
 ];
 
 module.exports = {
@@ -18,12 +18,12 @@ module.exports = {
       displayName: "test",
       preset: "ts-jest",
       snapshotSerializers: ["jest-serializer-xml"],
-      collectCoverage: true
+      collectCoverage: true,
     },
     {
       displayName: "lint:prettier",
       preset: "jest-runner-prettier",
-      testPathIgnorePatterns
+      testPathIgnorePatterns,
     },
     {
       runner: "eslint",
@@ -32,8 +32,8 @@ module.exports = {
       testMatch: [
         "<rootDir>/**/*.ts",
         "<rootDir>/**/*.tsx",
-        "<rootDir>/**/*.js"
-      ]
-    }
-  ]
+        "<rootDir>/**/*.js",
+      ],
+    },
+  ],
 };

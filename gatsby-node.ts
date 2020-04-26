@@ -18,11 +18,11 @@ export const onPostBuild = async (
   if (pluginOptions && pluginOptions.userIds) {
     const xml = builder
       .create({
-        users: pluginOptions.userIds.map(userId => ({
+        users: pluginOptions.userIds.map((userId) => ({
           user: {
-            "#text": userId
-          }
-        }))
+            "#text": userId,
+          },
+        })),
       })
       .end();
 

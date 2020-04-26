@@ -6,7 +6,7 @@ describe("gatsby-plugin-verify-bing: gatsby-node", () => {
 
     beforeEach(() => {
       jest.mock("fs", () => ({
-        writeFile: mockedWriteFile
+        writeFile: mockedWriteFile,
       }));
     });
 
